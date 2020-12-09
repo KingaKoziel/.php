@@ -4,7 +4,7 @@
 </head>
 <body>
     <h1>Pracownicy i Organizacja</h1>
-  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
+  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KingaKoziel">github</a>
   
     <div class="nav">
       <a href="index.php">Strona Główna</a>
