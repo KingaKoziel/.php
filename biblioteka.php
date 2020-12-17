@@ -9,18 +9,20 @@
       <a href="index.php">Strona Główna</a>
     </div>
 <?php 
-    echo ('<h2>Tytuł<h2>');
-	$sql ="select * from biblTytuł";
+require_once("connect.php");
+  echo("<h3>Tytuły</h3>"); 
+$sql = "select * from biblTytul";
+    echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
-if ( $result) {
-    } else {
-      echo "Error: " . $sql . "<br>" .;
-    }
-echo('<select name="pracownik">');
-	while($row = mysqli_fetch_assoc($result)) {
-            echo '<option value="'.$row['ID'].'">';
-	    echo($row['ID'].', '.$row['tytuł'].);
- 	    echo "</option>";
+echo('<table border="1" class="tabela"'); 
+    echo ("<tr><th>id</th><th>tytul</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+  echo("<tr>");     
+  echo("<tr>");   
+ echo ('<td>'.$row["id"].'</td><td>'.$row["tytul"].'</td>');
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>');
 	
 		  echo("<h3>Autorzy</h3>"); 
 $sql = "select * from biblAutor";
