@@ -11,6 +11,19 @@
   </div>
 
 <?php 
+    echo ('<h2>Lista<h2>');
+	$sql ="select * from pracownicy";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<select name="pracownicy">');
+	while($row = mysqli_fetch_assoc($result)) {
+         echo '<option value="'.$row['id_pracownicy'].'">';
+	    echo($row['imie'].', '.$row['zarobki'].', '.$row['data_urodzenia'].', '.$row['dzial']);
+ 	    echo "</option>";
+        
 require_once("connect.php");
 $sql = "select * from pracownicy, organizacja where id_org=dzial"; 
 echo("<h3>Pracownicy z nazwą działu</h3>"); 
