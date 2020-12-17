@@ -9,20 +9,17 @@
       <a href="index.php">Strona Główna</a>
     </div>
 <?php 
-require_once("connect.php");
-  echo("<h3>Tytuły</h3>"); 
-$sql = "select * from biblTytuł";
-    echo("<li>".$sql);
+   echo("<h3> TYTULY </h3>");
+$sql = "SELECT * FROM bibl_tytul";
+    echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
-echo('<table border="1" class="tabela"'); 
-    echo ("<tr><th>id</th><th>tytul</th></tr>");
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>ksiazka</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
-  echo("<tr>");     
-  echo("<tr>");   
- echo ('<td>'.$row["id"].'</td><td>'.$row["tytul"].'</td>');
-  echo("<tr>"); 
-  echo("</tr>"); } 
-echo('</table>');
+                echo ('<tr>');
+                echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
 	
 		  echo("<h3>Autorzy</h3>"); 
 $sql = "select * from biblAutor";
