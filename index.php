@@ -12,6 +12,7 @@
       <a href="data_i_czas.php">Data i Czas</a><br>
         <a href="formularz.html">Formularz</a><br>
         <a href="danedobazy.php">Dodawanie i usuwanie</a><br>
+        <a href="biblioteka.php">Biblioteka</a><br>
       </div>
 
 <?php 
