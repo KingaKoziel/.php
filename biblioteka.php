@@ -9,13 +9,12 @@
       <a href="index.php">Strona Główna</a>
     </div>
 <?php 
-require_once("connect.php");
     echo ('<h2>Tytuł<h2>');
 	$sql ="select * from biblTytuł";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+      echo "Error: " . $sql . "<br>" .;
     }
 echo('<select name="pracownik">');
 	while($row = mysqli_fetch_assoc($result)) {
