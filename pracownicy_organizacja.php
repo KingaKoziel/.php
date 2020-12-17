@@ -4,27 +4,29 @@
 </head>
 <body>
     <h1>Pracownicy i Organizacja</h1>
-  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KingaKoziel">github</a>
+  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
   
     <div class="nav">
       <a href="index.php">Strona Główna</a>
   </div>
 
 <?php 
-    echo ('<h2>Lista<h2>');
+require_once("connect.php");
+    echo ('<h2>Nowa lista pracowników<h2>');
 	$sql ="select * from pracownicy";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-echo('<select name="pracownicy">');
+echo('<select name="pracownik">');
 	while($row = mysqli_fetch_assoc($result)) {
-         echo '<option value="'.$row['id_pracownicy'].'">';
+            echo '<option value="'.$row['id_pracownicy'].'">';
 	    echo($row['imie'].', '.$row['zarobki'].', '.$row['data_urodzenia'].', '.$row['dzial']);
  	    echo "</option>";
-        
-require_once("connect.php");
+	};
+echo('</select>');
+echo ('<br>');
 $sql = "select * from pracownicy, organizacja where id_org=dzial"; 
 echo("<h3>Pracownicy z nazwą działu</h3>"); 
        echo("<li>".$sql);
