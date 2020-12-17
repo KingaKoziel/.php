@@ -11,7 +11,7 @@
 <?php 
 require_once("connect.php");
   echo("<h3>Tytuły</h3>"); 
-$sql = "select * from biblTytul";
+$sql = "select * from biblTytuł";
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
 echo('<table border="1" class="tabela"'); 
