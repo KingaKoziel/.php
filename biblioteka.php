@@ -9,11 +9,11 @@
       <a href="index.php">Strona Główna</a>
     </div>
 <?php 
-   echo("<h3> TYTULY </h3>");
-$sql = "SELECT * FROM bibl_tytul";
+   echo("<h3> Tytuły </h3>");
+$sql = "SELECT * FROM biblTytuł";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
-    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ('<table border = "1" class = "tabelka">');
     echo ("<tr><th>ID</th><th>ksiazka</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
