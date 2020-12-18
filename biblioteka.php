@@ -47,11 +47,11 @@ $sql = "select * from biblAutor_biblTytul";
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
 echo('<table border="1" class="tabela"'); 
-    echo ("<tr><th>id</th><th>tytul</th></tr>");
+    echo ("<tr><th>id</th><th>biblWypoz</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
   echo("<tr>");     
   echo("<tr>");   
- echo ('<td>'.$row["id"].'</td><td>'.$row["Wypoz"].'</td>');
+ echo ('<td>'.$row["id"].'</td><td>'.$row["biblWypoz"].'</td>');
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>');
