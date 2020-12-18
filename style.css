@@ -11,8 +11,19 @@ table {
 }
 th {
   background-color: #DED5D0;
-  color: white;
+  height: 70px;
+  
+td {
+  text-align: center;
 }
+th {
+  text-align: center;
+}
+  color: white;
+  }
+
+
+  
 table {
   width: 30%;
 }
@@ -20,6 +31,6 @@ table {
 th {
   height: 70px;
 }
-tr{
-hover {background-color:#DED5D0;
+{
+tr: hover {background-color:#DED5D0;
 }
