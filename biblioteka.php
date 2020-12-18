@@ -9,6 +9,22 @@
       <a href="index.php">Strona Główna</a>
     </div>
 <?php 
+	
+	require_once("connect.php");
+    echo ('<h2>Nowa lista pracowników<h2>');
+	$sql ="select * from biblTytul";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<select name="tytul">');
+	while($row = mysqli_fetch_assoc($result)) {
+            echo '<option value="'.$row['ID'].'">';
+	    echo($row['tytul']);
+ 	    echo "</option>";
+		
+		
 require_once("connect.php");
   echo("<h3>Tytuły</h3>"); 
 $sql = "select * from biblTytul";
