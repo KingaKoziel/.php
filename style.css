@@ -11,8 +11,9 @@ table {
 }
 th {
   background-color: #DED5D0;
-
+ text-align: center;
  color: white;
+  height: 50px;
 }
 
 
@@ -21,8 +22,9 @@ table {
   width: 30%;
 }
 
-th {
+tr{
   height: 70px;
+   text-align: center;
 }
 {
 tr: hover {background-color:#DED5D0;
