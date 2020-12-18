@@ -32,11 +32,7 @@ echo("<h3>Pracownicy z nazwą działu</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1"  width="100%" class="tabela"'); 
-	<tr>
-	<td width="30%"> </td>;
-	<td width="40%"> </td>;
-	<td width="30%"> </td>;
-	</tr>
+	
 echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
    echo("<tr>");     
