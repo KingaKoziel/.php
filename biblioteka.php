@@ -14,7 +14,7 @@
 		
 require_once("connect.php");
   echo("<h3>Tytuły</h3>"); 
-$sql = "select * from biblTytul, biblAutor_biblTytul";
+$sql = "select * from biblTytul";
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
 echo('<table border="1" class="tabela"'); 
@@ -22,7 +22,7 @@ echo('<table border="1" class="tabela"');
         while ($row = mysqli_fetch_assoc($result)) {
   echo("<tr>");     
   echo("<tr>");   
- echo ('<td>'.$row["id"].'</td><td>'.$row["tytul"].'</td>'.$row["biblWypoz"]);
+ echo ('<td>'.$row["id"].'</td><td>'.$row["tytul"].'</td>');
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>');
@@ -51,7 +51,7 @@ echo('<table border="1" class="tabela"');
         while ($row = mysqli_fetch_assoc($result)) {
   echo("<tr>");     
   echo("<tr>");   
- echo ('<td>'.$row["id"].'</td><td>'.$row["biblWypoz"].'</td>');
+ echo ('<td>'.$row["id"].'</td><td>'.'<td>'$row["biblAutor_id"].'</td><td>'$row["biblTytul_id"].'</td><td>'$row["biblWypoz"].'</td>');
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>');
