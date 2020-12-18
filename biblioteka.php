@@ -24,7 +24,7 @@ echo('<select name="tytul">');
 	    echo($row['tytul']);
  	    echo "</option>";
 	}
-		
+	{		
 require_once("connect.php");
   echo("<h3>Tytuły</h3>"); 
 $sql = "select * from biblTytul";
@@ -53,4 +53,5 @@ echo('<table border="1" class="tabela"');
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
+	}
 ?> 
