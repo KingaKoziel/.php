@@ -23,7 +23,7 @@ echo('<select name="tytul">');
             echo '<option value="'.$row['ID'].'">';
 	    echo($row['tytul']);
  	    echo "</option>";
-		
+	}
 		
 require_once("connect.php");
   echo("<h3>Tytuły</h3>"); 
