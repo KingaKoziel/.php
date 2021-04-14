@@ -7,12 +7,12 @@
   <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-KingaKoziel">github</a>
   
     <div class="nav">
-      <a href="pracownicy_organizacja.php">Pracownicy i organizacja</a><br>
-      <a href="funkcje_agregujace.php">Funkcje Agregujące</a><br>
-      <a href="data_i_czas.php">Data i Czas</a><br>
-        <a href="formularz.html">Formularz</a><br>
-        <a href="danedobazy.php">Dodawanie i usuwanie</a><br>
-        <a href="biblioteka.php">Biblioteka</a><br>
+      <a href="Pracownicy/pracownicy_organizacja.php">Pracownicy i organizacja</a><br>
+      <a href="Pracownicy/funkcje_agregujace.php">Funkcje Agregujące</a><br>
+      <a href="Pracownicy/data_i_czas.php">Data i Czas</a><br>
+        <a href="inne/formularz.html">Formularz</a><br>
+        <a href="Pracownicy/danedobazy.php">Dodawanie i usuwanie</a><br>
+        <a href="Biblioteka/biblioteka.php">Biblioteka</a><br>
         <a href="Jednorozce/index.html">Jednorozce</a><br>
       </div>
 
