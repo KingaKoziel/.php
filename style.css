@@ -26,6 +26,15 @@ tr{
   height: 70px;
    text-align: center;
 }
-{
-tr: hover {background-color:#DED5D0;
+
+a  {
+  display: block;
+  background-color: rgb(224, 155, 63);
+  color: rgb(255, 255, 255);
+  margin: 2px;
+  border-radius: 4em;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 1ms;
+  width: 5em;
 }
