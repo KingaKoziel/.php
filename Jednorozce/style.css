@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    background-color: #c6f790;
+    animation: tlo 10s infinite;
+}
+
+a {
+    float: inline-start;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #6f87f0;
+}
+a  {
+    display: block;
+    background-color: rgb(224, 155, 63);
+    color: rgb(255, 255, 255);
+    margin: 2px;
+    border-radius: 4em;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 1ms;
+    width: 5em;
+}

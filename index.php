@@ -13,6 +13,7 @@
         <a href="formularz.html">Formularz</a><br>
         <a href="danedobazy.php">Dodawanie i usuwanie</a><br>
         <a href="biblioteka.php">Biblioteka</a><br>
+        <a href="Jednorozce/index.html">Jednorozce</a><br>
       </div>
 
 <?php 
