@@ -75,7 +75,7 @@
         <?php
               require_once("../../connect.php");
 
-              $sql = "SELECT id, Auto, Kolor FROM Auta, Kolor WHERE Auto.id_Auto = Kolor.id_Kolor;
+              $sql = "SELECT * FROM Auta, Kolor, WHERE Auto.id = Kolor.id;
               $wynik = mysqli_query($conn, $sql);
                   
                   echo("<br>");
@@ -98,6 +98,7 @@
 
         
               ?>
+              </div>
         <div class="p5">5</div>      
     </div>
     </body>
