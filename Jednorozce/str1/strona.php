@@ -71,7 +71,33 @@
         ?>
         </div>
 
-        <div class="p4">4</div>
+        <div class="p4">
+        <?php
+              require_once("../../connect.php");
+
+              $sql = "SELECT id, Auto, Kolor FROM Auta, Kolor WHERE Auto.id_Auto = Kolor.id_Kolor;
+              $wynik = mysqli_query($conn, $sql);
+                  
+                  echo("<br>");
+                  echo("Tabele");
+                  echo("<br>");
+                  echo($sql);
+                  echo('<table border="1">');
+                  echo('<th>id</th><th>producent</th><th>produkt</th>');
+              
+                  while($wiersz=mysqli_fetch_assoc($wynik))
+                  {
+                      echo('<tr>');
+                      echo('<td>'.$wiersz['id'].'</td>'.'<td>'.$wiersz['Auto'].'</td>'.'<td>'.$wiersz['Kolor'].'</td>');
+                      echo('</tr>');
+                  }
+              
+                  echo('</table>');
+                  
+              echo("<br>");
+
+        
+              ?>
         <div class="p5">5</div>      
     </div>
     </body>
