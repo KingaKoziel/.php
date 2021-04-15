@@ -72,6 +72,31 @@
         </div>
 
         <div class="p4">
+        <?php
+                        require_once("../connect.php");
+                        $sql = "select (`WID`.id) as ID_TAB, Kolor, Auto from Auta , Kolor where Auto.id=biblAuto_id and Kolor.id=Kolor_id order by ID_TAB asc";
+                            if ($conn->connect_error) {
+                                    die("Connection failed: " . $conn->connect_error);
+                             }
+                                $result = mysqli_query($conn, $sql);
+                            if ( $result) {
+                            } else {
+                                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                            }
+                        
+                            echo("<h1>Wiele do Wielu</h1>");
+                        
+                            echo("<table border='1'>");
+                            echo("<th>ID</th><th>Auto</th><th>Autor</th>");
+                                while($row = mysqli_fetch_assoc($result)) {
+                                    echo("<tr>");
+                                    echo("<td>".$row['ID_TAB']."</td><td>".$row['Auto']."</td><td>".$row['Kolor']."</td>");
+                                    echo("</tr>");
+                                };
+                            echo("</table>");
+                            echo ("<br>");
+                ?>
+        </div>
        
         <div class="p5">5</div>      
     </div>
