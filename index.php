@@ -16,7 +16,7 @@
         <a href="Jednorozce/index.html">Jednorozce</a><br>
       </div>
 
-<?php 
+      <?php 
 require_once("connect.php");
     echo("<h2>Podstawowe</h2>"); 
 $sql ="select * from pracownicy"; 
