@@ -39,6 +39,7 @@
             echo ("<br>");
 
         ?>
+          </div>
         <div class="p2">
         <?php
         require_once("../../connect.php");
