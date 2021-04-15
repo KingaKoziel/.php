@@ -16,7 +16,7 @@
 
         <?php
         require_once("../../connect.php");
-        $sql = "SELECT * FROM Auta";
+        $sql = "SELECT * FROM Auto";
         
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
