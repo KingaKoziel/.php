@@ -40,8 +40,9 @@
             echo ("<br>");
 
         ?>
+          </div>
         <div class="p3">3</div>
-        <div class="p4">
+          <div class="p4">4</div>
             
             <?php
         require_once("../../connect.php");
