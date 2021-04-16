@@ -5,12 +5,14 @@
         
 </head>
     <body>
+    <div class="container">
     <div class="nav">
-         <a href="https://github.com/KingaKoziel/.php">github</a>
+      <br>
+      <br>
+         <a  href="https://github.com/KingaKoziel/.php">github</a>
       <a href="../../index.php">Strona główna</a>
       <a href="../index.html">Cofnij</a>
 </div>
-      <div class="container">
         <div class="p1">
         <?php
         require_once("../../connect.php");
