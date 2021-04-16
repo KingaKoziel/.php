@@ -70,7 +70,23 @@
 
         ?>
         </div>
-        <div class="p3">3</div>
+        <div class="p3">
+        <?php
+        require_once("../../connect.php");
+        $sql = "select * from Kraj, Miadto where id_kraj=id_miasto"; 
+
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo('<tr><th>Kraj</th><th>Miasto</th></tr>');
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo('<td>'.$row['Kraj'].'</td><td>'.$row['Miasto'].'</td><td>'.$row['id_kraj'].'</td>');     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
+              ?>
+       </div> 
         <div class="p4">4</div>
         <div class="p5">5</div>
         <div class="p6">6</div>   
