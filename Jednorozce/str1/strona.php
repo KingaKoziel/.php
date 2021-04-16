@@ -76,7 +76,6 @@
         require_once("../../connect.php");
         $sql = "select * from Auto, Kolor where id_auto=id_kolor"; 
 echo("<h3>Kolor Auta</h3>"); 
-       echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
 echo('<tr><th>Auto</th><th>Kolor</th><th>Numer_Auta</th></tr>');
