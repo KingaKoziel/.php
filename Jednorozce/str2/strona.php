@@ -73,7 +73,7 @@
         <div class="p3">
         <?php
         require_once("../../connect.php");
-        $sql = "select * from Kraj, Miadto where id_kraj=id_miasto"; 
+        $sql = "select * from Kraj, Miasto where id_kraj=id_miasto"; 
 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
