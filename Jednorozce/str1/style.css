@@ -18,7 +18,7 @@ h1 {
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 0,5fr 2fr 2fr 2fr;
     grid-template-areas: 
     "f a b c"
     "f a d c"

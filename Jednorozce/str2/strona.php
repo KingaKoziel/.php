@@ -33,7 +33,7 @@
             echo("<th>ID</th><th>Kraj</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['Kraj']."</td>");
+                    echo("<td>".$row['id_kraj']."</td><td>".$row['Kraj']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
@@ -62,7 +62,7 @@
             echo("<th>ID</th><th>Miasto</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['Miasto']."</td>");
+                    echo("<td>".$row['id_miasto']."</td><td>".$row['Miasto']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
@@ -77,7 +77,7 @@
 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<tr><th>Kraj</th><th>Miasto</th></tr>');
+echo('<tr><th>Kraj</th><th>Miasto</th><th>ID</tr></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
