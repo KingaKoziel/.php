@@ -13,21 +13,6 @@ h1 {
     text-decoration: none;
     background-color: #9baaf0;
 }
-
-a {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    background-color: rgb(224, 155, 63);
-    margin: 2px;
-    border-radius: 4em;
-    transition-duration: 1ms;
-    width: 5em;
-}
-
 .container {
     background-color: rgb(0, 225, 255);
     padding: 5px;
