@@ -18,9 +18,9 @@ h1 {
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1 fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
     grid-template-areas: 
-    "g a b c"
+    "f a b c"
     "f a d c"
     "f a e c";
 }
@@ -45,9 +45,6 @@ h1 {
     grid-area: e;
 }
 .p6{
-    background-color:rgb(0, 225, 255);
-    grid-area: g;
-}.p7{
     background-color: rgb(0, 225, 255);
     grid-area: f;
 }
