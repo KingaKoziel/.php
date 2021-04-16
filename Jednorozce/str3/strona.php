@@ -71,7 +71,23 @@
         ?>
         </div>
         <div class="p3">3</div>
-        <div class="p4">4</div>
+        <div class="p4">
+        <?php
+        require_once("../../connect.php");
+        $sql = "select * from Imie, Nazwisko where id_imie=id_nazwisko"; 
+
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo('<tr><th>Imie</th><th>Nazwisko</th><th>ID</tr></tr>');
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo('<td>'.$row['Imie'].'</td><td>'.$row['Nazwisko'].'</td><td>'.$row['id_imie'].'</td>');     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
+              ?>
+       </div> 
         <div class="p5">5</div> 
     </div>
     </body>
