@@ -41,9 +41,9 @@
 .link {
     background-color: #ffab66;
     padding: 25px 25px 25px 25px;
-    margin: 50px;
+    margin: 25px 10px;
     width: 100px;
     text-align: center;
     text-decoration: none;
-    display: inline;
+    display: inline-block;
 }
