@@ -42,7 +42,7 @@
         ?>
           </div>
         <div class="p3">3</div>
-          <div class="p4">4</div>
+          <div class="p4">
             
             <?php
         require_once("../../connect.php");
