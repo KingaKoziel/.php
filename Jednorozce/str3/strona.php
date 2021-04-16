@@ -5,12 +5,11 @@
         
 </head>
     <body>
-     
+    <div class="nav">
          <a href="https://github.com/KingaKoziel/.php">github</a>
-  
-        <div class="nav">
       <a href="../../index.php">Strona główna</a>
       <a href="../index.html">Cofnij</a>
+</div>
       <div class="container">
         <div class="p1">
         <?php
