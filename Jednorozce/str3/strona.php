@@ -5,7 +5,7 @@
         
 </head>
     <body>
-    <div class="container">
+
     <div class="nav">
       <br>
       <br>
@@ -13,6 +13,7 @@
       <a href="../../index.php">Strona główna</a>
       <a href="../index.html">Cofnij</a>
 </div>
+<div class="container">
         <div class="p1">
         <?php
         require_once("../../connect.php");
