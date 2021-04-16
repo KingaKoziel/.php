@@ -7,9 +7,9 @@
     <body>
     <div class="nav">
      
-         <a href="https://github.com/KingaKoziel/.php">github</a>
-      <a href="../../index.php">Strona główna</a>
-      <a href="../index.html">Cofnij</a>
+         <a class="link" href="https://github.com/KingaKoziel/.php">github</a>
+      <a class= "link" href="../../index.php">Strona główna</a>
+      <a class="link" href="../index.html">Cofnij</a>
 </div>
 <div class="container">
         <div class="p1">1</div>
