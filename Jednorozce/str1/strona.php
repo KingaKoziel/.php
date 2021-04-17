@@ -62,7 +62,7 @@
             echo("<th>ID</th><th>Machenik</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id_machanik']."</td><td>".$row['Mechanik']."</td>");
+                    echo("<td>".$row['id_mechanik']."</td><td>".$row['Mechanik']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
