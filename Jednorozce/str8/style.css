@@ -11,8 +11,8 @@
     grid-template-columns: 1fr 2fr 2fr 2fr;
     grid-template-areas: 
     "g a b f"
-    "g d c e"
-    "g e d e";
+    "g c c e"
+    "g d d e";
 }
 .p1 {
     background-color: rgb(255, 0, 0);
