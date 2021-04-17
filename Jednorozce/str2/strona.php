@@ -15,7 +15,7 @@
 
         <?php
         require_once("../../connect.php");
-        $sql = "SELECT * FROM Kraj";
+        $sql = "SELECT * FROM Nazwisko";
         
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
@@ -29,10 +29,10 @@
              }
         
             echo("<table border='1'>");
-            echo("<th>ID</th><th>Kraj</th>");
+            echo("<th>ID</th><th>Lekarz</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id_kraj']."</td><td>".$row['Kraj']."</td>");
+                    echo("<td>".$row['id_nazwisko']."</td><td>".$row['Nazwisko']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
@@ -44,7 +44,7 @@
 
         <?php
         require_once("../../connect.php");
-        $sql = "SELECT * FROM Miasto";
+        $sql = "SELECT imie, dzial FROM pracownicy";
         
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
@@ -58,10 +58,10 @@
              }
         
             echo("<table border='1'>");
-            echo("<th>ID</th><th>Miasto</th>");
+            echo("<th>ID</th><th>Pacjent</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id_miasto']."</td><td>".$row['Miasto']."</td>");
+                    echo("<td>".$row['dzial']."</td><td>".$row['imie']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
@@ -72,15 +72,15 @@
         <div class="p3">
         <?php
         require_once("../../connect.php");
-        $sql = "select * from Kraj, Miasto where id_kraj=id_miasto"; 
+        $sql = "select * from Nazwisko, pracownicy where id_Nazwisko=dzial"; 
 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<tr><th>Kraj</th><th>Miasto</th><th>ID</tr></tr>');
+echo('<tr><th>Lekarz</th><th>Pacjent</th><th>ID</tr></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
-  echo('<td>'.$row['Kraj'].'</td><td>'.$row['Miasto'].'</td><td>'.$row['id_kraj'].'</td>');     
+  echo('<td>'.$row['Nazwisko'].'</td><td>'.$row['pracownicy'].'</td><td>'.$row['id_nazwisko'].'</td>');     
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
