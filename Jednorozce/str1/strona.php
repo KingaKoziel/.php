@@ -78,7 +78,7 @@
 echo("<h3>Kolor Auta</h3>"); 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<tr><th>Auto</th><th>Kolor</th><th>Numer_Auta</th></tr>');
+echo('<tr><th>Auto</th><th>Kolor</th><th>ID</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
