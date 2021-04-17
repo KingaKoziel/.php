@@ -7,7 +7,7 @@
     <body>
     <div class="container">
     <div class="nav">
-         <a class= "link" href="https://github.com/KingaKoziel/.php">github</a>
+         <a class= "link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-KingaKoziel.git">github</a>
       <a class= "link"  href="../../index.php">Strona główna</a>
       <a class= "link" href="../index.html">Cofnij</a>
 </div>
