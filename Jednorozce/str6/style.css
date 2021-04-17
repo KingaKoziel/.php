@@ -43,7 +43,6 @@
     grid-area: g;    
 }
 .link {
-    display: block;
     background-color: #ffab66;
     padding: 25px 25px 25px 25px;
     margin: 25px 10px;
