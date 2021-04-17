@@ -49,15 +49,16 @@ h1 {
     grid-area: f;
 }
 .nav  {
-
+    background-color:rgb(147, 233, 245);
+    grid-area: f;    
+}
+.link {
     display: block;
-    background-color: rgb(224, 155, 63);
-    color: rgb(255, 255, 255);
-    margin: 2px;
-    border-radius: 4em;
-    padding: 1em;
+    background-color: #ffab66;
+    padding: 25px 25px 25px 25px;
+    margin: 25px 10px;
+    width: 100px;
+    text-align: center;
     text-decoration: none;
-    transition-duration: 1ms;
-    width: 5em;
-    grid-area: f;
+    display: inline-block;
 }
