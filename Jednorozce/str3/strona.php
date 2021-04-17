@@ -5,15 +5,13 @@
         
 </head>
     <body>
-
+    <div class="container">
     <div class="nav">
-      <br>
-      <br>
-         <a  href="https://github.com/KingaKoziel/.php">github</a>
-      <a href="../../index.php">Strona główna</a>
-      <a href="../index.html">Cofnij</a>
+         <a class= "link" href="https://github.com/KingaKoziel/.php">github</a>
+      <a class= "link" href="../../index.php">Strona główna</a>
+      <a class= "link" href="../index.html">Cofnij</a>
 </div>
-<div class="container">
+
         <div class="p1">
         <?php
         require_once("../../connect.php");
@@ -34,7 +32,7 @@
             echo("<th>ID</th><th>Imie</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['Imie']."</td>");
+                    echo("<td>".$row['id_imie']."</td><td>".$row['Imie']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
@@ -62,7 +60,7 @@
             echo("<th>ID</th><th>Nazwisko</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['Nazwisko']."</td>");
+                    echo("<td>".$row['id_nazwisko']."</td><td>".$row['Nazwisko']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");

@@ -8,11 +8,11 @@
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
     grid-template-areas: 
-    "a b b b"
-    "a d d c"
-    "a e f c";
+    "g a b b b"
+    "g a c c d"
+    "g a f e d";
 }
 .p1 {
     background-color: rgb(255, 0, 0);
@@ -24,28 +24,31 @@
 }
 .p3 {
     background-color: rgb(252, 110, 63);
-    grid-area: c;   
+    grid-area: d;   
 }
 .p4 {
     background-color: rgb(0, 153, 255);
-    grid-area: d;   
+    grid-area: c;   
 }
 .p5 {
     background-color: rgb(239, 255, 10);
-    grid-area: e; 
+    grid-area: f; 
 }
 .p6 {
     background-color: rgb(239, 255, 10);
-    grid-area: f;    
+    grid-area: e;    
 }
-.nav {
+.nav  {
+    background-color:rgb(147, 233, 245);
+    grid-area: g;    
+}
+.link {
     display: block;
-    background-color: rgb(224, 155, 63);
-    color: rgb(255, 255, 255);
-    margin: 2px;
-    border-radius: 4em;
-    padding: 1em;
+    background-color: #ffab66;
+    padding: 25px 25px 25px 25px;
+    margin: 25px 10px;
+    width: 100px;
+    text-align: center;
     text-decoration: none;
-    transition-duration: 1ms;
-    width: 5em;
+    display: inline-block;
 }

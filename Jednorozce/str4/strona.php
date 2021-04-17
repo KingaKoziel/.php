@@ -34,7 +34,7 @@
             echo("<th>ID</th><th>Imie</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['Imie']."</td>");
+                    echo("<td>".$row['id_imie']."</td><td>".$row['Imie']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
@@ -64,7 +64,7 @@
             echo("<th>ID</th><th>Rola</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id']."</td><td>".$row['Rola']."</td>");
+                    echo("<td>".$row['id_rola']."</td><td>".$row['Rola']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
