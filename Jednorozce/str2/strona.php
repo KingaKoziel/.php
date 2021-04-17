@@ -80,7 +80,7 @@ echo('<tr><th>Lekarz</th><th>Pacjent</th><th>ID</tr></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
-  echo('<td>'.$row['Nazwisko'].'</td><td>'.$row['pracownicy'].'</td><td>'.$row['id_nazwisko'].'</td>');     
+  echo('<td>'.$row['Nazwisko'].'</td><td>'.$row['imie'].'</td><td>'.$row['id_nazwisko'].'</td>');     
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
