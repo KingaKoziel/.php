@@ -15,15 +15,15 @@
     "h a e f";
 }
 .p1 {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(252, 54, 54);
     grid-area: a;
 }
 .p2 { 
-    background-color: rgb(68, 248, 14);
+    background-color: rgb(105, 248, 62);
     grid-area: b;
 }
 .p3 { 
-    background-color: rgb(68, 248, 14);
+    background-color: rgb(105, 248, 62);
     grid-area: c;
 }
 .p4 {
@@ -31,15 +31,15 @@
     grid-area: g;
 }
 .p5{
-    background-color: rgb(0, 153, 255);
+    background-color: rgb(60, 174, 250);
     grid-area: d;
 }
 .p6{
-    background-color: rgb(239, 255, 10);
+    background-color: rgb(240, 253, 57);
     grid-area: e;
 }
 .p7 {
-    background-color: rgb(239, 255, 10);
+    background-color: rgb(240, 253, 57);
     grid-area: f;
 }
 
