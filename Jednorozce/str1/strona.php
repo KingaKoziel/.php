@@ -45,7 +45,7 @@
         <div class="p3">
         <?php
         require_once("../../connect.php");
-        $sql = "SELECT * FROM Kolor";
+        $sql = "SELECT * FROM Mechanik";
         
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
@@ -59,10 +59,10 @@
              }
         
             echo("<table border='1'>");
-            echo("<th>ID</th><th>Kolor</th>");
+            echo("<th>ID</th><th>Machenik</th>");
                 while($row = mysqli_fetch_assoc($result)) {
                     echo("<tr>");
-                    echo("<td>".$row['id_kolor']."</td><td>".$row['Kolor']."</td>");
+                    echo("<td>".$row['id_machanik']."</td><td>".$row['Mechanik']."</td>");
                     echo("</tr>");
                 };
             echo("</table>");
@@ -74,15 +74,15 @@
           <div class="p4"> 
         <?php
         require_once("../../connect.php");
-        $sql = "select * from Auto, Kolor where id_auto=id_kolor"; 
+        $sql = "select * from Auto, Mechanik where id_auto=id_mechanik"; 
 echo("<h3>Kolor Auta</h3>"); 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<tr><th>Auto</th><th>Kolor</th><th>ID</th></tr>');
+echo('<tr><th>Auto</th><th>Mechanik</th><th>ID</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
-  echo('<td>'.$row['Auto'].'</td><td>'.$row['Kolor'].'</td><td>'.$row['id_auto'].'</td>');     
+  echo('<td>'.$row['Auto'].'</td><td>'.$row['Mechanik'].'</td><td>'.$row['id_auto'].'</td>');     
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
